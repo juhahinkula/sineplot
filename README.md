@@ -1,3 +1,8 @@
+## Sine plot
+Plot sine curve with given frequency and amplitude.
+
+Implemented using Rust & WebAssembply & Rust webpack https://github.com/rustwasm/rust-webpack-template
+
 ## How to install
 
 ```sh
