@@ -1,6 +1,6 @@
 {
-  "author": "You <you@example.com>",
-  "name": "rust-webpack-template",
+  "author": "Juha Hinkula <hinkula@gmail.com>",
+  "name": "sineplot",
   "version": "0.1.0",
   "scripts": {
     "build": "rimraf dist pkg && webpack",
