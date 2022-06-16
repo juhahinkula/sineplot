@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Rust + Webpack project!</title>
+  </head>
+  <body>
+    <div class="controls">
+      <h1>Sine plot</h1>
+      <div>
+        <label for="freq">Frequency</label>
+        <input type="number" name="freq" id="freq" value="20" step="1">
+      </div>
+      <div>
+        <label for="ampl">Amplitude</label>
+        <input type="number" name="ampl" id="ampl" value="40" step="1">
+      </div>
+      <button id="draw">Draw</button>
+    </div>
+    <canvas id="canvas" height="300" width="500"></canvas>
+    <script src="index.js"></script>
+  </body>
+</html>
