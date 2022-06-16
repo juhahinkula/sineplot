@@ -1,7 +1,7 @@
 ## Sine plot
 Plot sine curve with given frequency and amplitude.
 
-![Screenshot](https://github.com/juhahinkula/sineplot/blob/main/sineplot.PNG | width=200)
+![Screenshot](https://github.com/juhahinkula/sineplot/blob/main/sineplot.PNG)
 
 Implemented using Rust & WebAssembply & Rust webpack https://github.com/rustwasm/rust-webpack-template
 
