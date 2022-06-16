@@ -1,5 +1,5 @@
 ## Sine plot
-Plot sine wave with given frequency and amplitude.
+Draw sine wave with given frequency and amplitude.
 
 ![Screenshot](https://github.com/juhahinkula/sineplot/blob/main/sineplot.PNG)
 
