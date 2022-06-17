@@ -42,10 +42,23 @@ fn plot_sine(ctx: &web_sys::CanvasRenderingContext2d, amplitude: f64, frequency:
 
     ctx.clear_rect(0.0, 0.0, CANVAS_WIDTH, CANVAS_HEIGHT);
     ctx.begin_path();
-      
+
+    // Draw axis
+    ctx.set_stroke_style(&JsValue::from("#0000FF"));
+    ctx.set_line_width(0.5);
+    ctx.move_to(0.0, CANVAS_HEIGHT / 2.0);
+    ctx.line_to(CANVAS_WIDTH, CANVAS_HEIGHT / 2.0);
+    ctx.stroke();
+    ctx.close_path();
+    ctx.begin_path();
+
+    // Draw sine wave
     let mut x: u16 = 0;
     let mut y: f64 = 0.0;
-      
+ 
+    ctx.set_stroke_style(&JsValue::from("#000000"));
+    ctx.set_line_width(1.0);
+    
     while x < CANVAS_WIDTH as u16 {
         y = (CANVAS_HEIGHT / 2.0) + amplitude * f64::sin(x as f64/ frequency);
         ctx.line_to(x as f64, y);
