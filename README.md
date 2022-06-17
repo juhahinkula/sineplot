@@ -5,6 +5,10 @@ Draw sine wave with given frequency and amplitude.
 
 Implemented using Rust & WebAssembply & Rust webpack https://github.com/rustwasm/rust-webpack-template
 
+## Prerequisites
+
+npm, rust (https://www.rust-lang.org/), wasm-pack cli (https://github.com/rustwasm/wasm-pack)
+
 ## How to install
 
 ```sh
