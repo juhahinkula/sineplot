@@ -10,7 +10,6 @@ use wasm_bindgen::JsCast;
 #[global_allocator]
 static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
-
 // This is like the `main` function, except for JavaScript.
 #[wasm_bindgen]
 pub fn draw(amplitude: u32, frequency: u32) -> Result<(), JsValue> {
@@ -38,19 +37,21 @@ pub fn draw(amplitude: u32, frequency: u32) -> Result<(), JsValue> {
 }
 
 fn plot_sine(ctx: &web_sys::CanvasRenderingContext2d, amplitude: f64, frequency: f64) {   
-      ctx.clear_rect(0.0, 0.0, 500.0, 300.0);
-      ctx.begin_path();
+    const CANVAS_WIDTH: f64 = 500.0;
+    const CANVAS_HEIGHT: f64 = 300.0;
+
+    ctx.clear_rect(0.0, 0.0, CANVAS_WIDTH, CANVAS_HEIGHT);
+    ctx.begin_path();
       
-      let mut x: u16 = 0;
-      let mut y: f64 = 0.0;
+    let mut x: u16 = 0;
+    let mut y: f64 = 0.0;
       
-      while x < 500 {
-        y = (300.0 / 2.0) + amplitude * f64::sin(x as f64/ frequency);
+    while x < CANVAS_WIDTH as u16 {
+        y = (CANVAS_HEIGHT / 2.0) + amplitude * f64::sin(x as f64/ frequency);
         ctx.line_to(x as f64, y);
-        
         x = x + 1;
-      }
-      
-      ctx.stroke();
+    }
+
+    ctx.stroke();
 }
 

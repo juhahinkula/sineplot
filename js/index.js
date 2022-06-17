@@ -9,5 +9,5 @@ import("../pkg").then(module => {
       module.draw(amplitude, frequency);
   });
 
-  module.draw(20, 20);
+  module.draw(40, 20);
 });
