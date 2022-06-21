@@ -7,7 +7,7 @@ Implemented using Rust & WebAssembly & Rust webpack https://github.com/rustwasm/
 
 ## Prerequisites
 
-npm, rust (https://www.rust-lang.org/), wasm-pack cli (https://github.com/rustwasm/wasm-pack)
+npm, rust (https://www.rust-lang.org/tools/install)
 
 ## How to install
 
