@@ -1,9 +1,10 @@
 ## Sine plot
 Draw sine wave with given frequency and amplitude.
 
+Implemented using Rust & WebAssembly & Rust webpack https://github.com/rustwasm/rust-webpack-template
+
 ![Screenshot](https://github.com/juhahinkula/sineplot/blob/main/sineplot.PNG)
 
-Implemented using Rust & WebAssembly & Rust webpack https://github.com/rustwasm/rust-webpack-template
 
 ## Prerequisites
 
