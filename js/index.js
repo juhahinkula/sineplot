@@ -6,7 +6,11 @@ import("../pkg").then(module => {
   drawBtn.addEventListener('click', () => {
       const amplitude = parseFloat(amplInput.value) || 0;
       const frequency = parseFloat(freqInput.value) || 0;
-      module.draw(amplitude, frequency);
+
+      if (amplitude > 150)
+        alert("Maximum ampiltude is 150")
+      else
+        module.draw(amplitude, frequency);
   });
 
   module.draw(40, 20);
